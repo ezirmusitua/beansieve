@@ -1,0 +1,7 @@
+{
+  "period": "5Y",
+  "folders": [
+    { "name": "target", "regex": "Assets:US:Vanguard:VBMPX" },
+    { "name": "other", "regex": "*" }
+  ]
+}
