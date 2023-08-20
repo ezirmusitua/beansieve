@@ -3,75 +3,10 @@ import itertools
 from beancount.core import data
 
 
-def empty_if_none(val):
-    return "" if val is None else str(val)
-
-
-def ensure_float_fixed(val: float):
-    if val is None:
-        return ""
-    if isinstance(val, int):
-        return str(val) + ".00"
-    if isinstance(val, float) and val.is_integer():
-        return str(val) + ".00"
-    return str(val)
-
-
 class Transaction(object):
 
-    def cost_string(self, posting):
-        cost_number = posting[6]
-        cost_currency = empty_if_none(posting[7])
-        cost_date = empty_if_none(posting[8])
-        cost_label = empty_if_none(posting[9])
-        out = ""
-        if cost_number is not None:
-            out = f"{cost_number} {cost_currency}"
-        if cost_date != "":
-            out = out + (", " if out else "") + cost_date
-        if cost_label != "":
-            out = out + (", " if out else "") + cost_label
-        if out:
-            return "{ " + out + " }"
-        return ""
-
-    def price_string(self, posting):
-        price_number = posting[10]
-        price_currency = posting[11]
-        if price_number is not None:
-            return f"@ {price_number} {price_currency}"
-        return ""
-
     def to_plain(self, connection):
-        sections = list()
-        with connection:
-            for row in connection.execute("SELECT * FROM transactions"):
-                content = list()
-                row = list(map(empty_if_none, row))
-                date = row[1]
-                flag = row[5]
-                payee = row[6]
-                narration = row[7]
-                tags = " ".join(
-                    list(map(lambda x: f"#{x}", filter(lambda x: x != "", row[8].split(",")))))
-                links = " ".join(
-                        list(map(lambda x: f"^{x}", filter(lambda x: x != "", row[9].split(",")))))
-                content.append(
-                    f"{date} {flag} \"{payee}\" \"{narration}\" {tags} {links}")
-                postings = connection.execute(
-                    f"SELECT * FROM postings WHERE id = {row[0]}")
-                for posting in postings:
-                    flag = empty_if_none(posting[2])
-                    account = empty_if_none(posting[3])
-                    number = ensure_float_fixed(posting[4])
-                    currency = empty_if_none(posting[5])
-                    posting_string = " ".join([
-                        flag, account, number, currency, self.cost_string(
-                            posting), self.price_string(posting)
-                    ])
-                    content.append(f"\t{posting_string}")
-                sections.append("\n".join(content))
-        return "\n\n".join(sections)
+        pass
 
     def to_sql(self, connection, entries):
         self.create_table(connection)

@@ -13,35 +13,5 @@ DefaultDirectiveMapping = [
 ]
 
 
-class ArchiveRule(object):
-    def __init__(self, fp: str):
-        self._fp = fp
-        self._data = json.loads(Path(fp).read_text(encoding="utf-8"))
-
-    @property
-    def folders(self):
-        return self._data.get("folders", [])
-
-    @property
-    def period(self):
-        return self._data.get("period", "y").lower()
-
-    @property
-    def directives(self):
-        return self._data.get("directives", DefaultDirectiveMapping)
-
-
-def prepare_folders(dest: str, directives: List[str], ):
-    _dest = Path(dest)
-    if not _dest.exists():
-        _dest.mkdir()
-    for directive in directives:
-        _dest.joinpath(directive).mkdir()
-
-
-def archive(source: str, dest: str, rule_fp: str):
-    rule = ArchiveRule(rule_fp)
-    for directive in rule.directives:
-        print("->1",)
-    for folder in rule.folders:
-        print(folder)
+def archive(source: str, dest: str, period: str):
+    raise Exception("Not implemented")

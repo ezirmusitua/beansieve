@@ -1,0 +1,5 @@
+Assets      
+Equity      
+Expenses    
+Income      
+Liabilities 

@@ -1,11 +1,21 @@
-from .lib.sql import convert_to_sqlite
-from .lib.plain import convert_to_plain
+from .lib.aggregate import aggregate
+from .lib.archive import archive
 from .lib.commands import parse
+from .lib.logging import init_logging
+from .lib.plain import convert_to_plain
+from .lib.sql import convert_to_sqlite
 
+init_logging()
 
 if __name__ == '__main__':
     args = parse()
-    if args.type == "sql":
+    if args.type == "archive":
+        archive(args.source, args.dest, args.keep)
+    elif args.type == "aggregate":
+        aggregate(args.source, args.dest, args.rule)
+    elif args.type == "plain":
+        convert_to_plain(args.source, args.dest)
+    elif args.type == "sql":
         convert_to_sqlite(args.source, args.dest)
     else:
-        convert_to_plain(args.source, args.dest)
+        print("Invalid type")
