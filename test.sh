@@ -1,11 +1,7 @@
 #!/bin/sh
-# bean-example > .artifacts/example.beancount
-# bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
+bean-example > .artifacts/example.beancount
+bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
 
-# python -m beansieve --type sql   --source ".artifacts/example.beancount" --dest ".artifacts/example.sqlite"
-
-# python -m beansieve --type plain --source ".artifacts/example.sqlite"    --dest ".artifacts/example_plain.beancount"
-# bean-report .artifacts/example_plain.beancount balances > .artifacts/example_plain-balances.txt
 
 rm -rf .artifacts/example_aggregate
 python -m beansieve \
@@ -40,3 +36,4 @@ python -m beansieve \
   --dest ".artifacts/prod_archive" \
   --keep 7d
 bean-report .artifacts/prod_archive/Main.beancount balances > .artifacts/prod_archive-balances.txt
+

@@ -16,11 +16,11 @@ def write_beancount(dest: str, key: str, entries: List[Entry]):
 
 
 def write_main_beancount(
-        dest: str,
-        key: str,
-        option: Option,
-        includes: List[str],
-        entries: List[Entry]
+    dest: str,
+    key: str,
+    option: Option,
+    includes: List[str],
+    entries: List[Entry]
 ):
     main_dest = Path(dest).joinpath(f"{key}.beancount")
     includes_string = "\n".join(

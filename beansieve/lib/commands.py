@@ -6,7 +6,7 @@ from beancount.parser import version
 
 def parse():
     parser = version.ArgumentParser(description=__doc__)
-    parser.add_argument("--type", help="<aggregate|archive|plain|sql>")
+    parser.add_argument("--type", help="<aggregate|archive>")
     parser.add_argument("--source", help="input beancount file")
     parser.add_argument("--dest", help="output")
     parser.add_argument("--keep", help="keep period entries in main file")

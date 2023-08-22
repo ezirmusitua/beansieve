@@ -1,5 +1,61 @@
-Assets      
-Equity      
-Expenses    
-Income      
-Liabilities 
+Assets:US:BofA:Checking                         343.59  USD
+Assets:US:ETrade:Cash                          5177.13  USD
+Assets:US:ETrade:GLD                            115     GLD
+Assets:US:ETrade:ITOT                            23     ITOT
+Assets:US:ETrade:VEA                             93     VEA
+Assets:US:ETrade:VHT                             29     VHT
+Assets:US:Federal:PreTax401k               
+Assets:US:Hooli:Vacation                        -15     VACHR
+Assets:US:Vanguard:Cash                           0.09  USD
+Assets:US:Vanguard:RGAGX                        296.056 RGAGX
+Assets:US:Vanguard:VBMPX                        203.411 VBMPX
+Equity:Opening-Balances                       -4255.79  USD
+Expenses:Financial:Commissions                  214.80  USD
+Expenses:Financial:Fees                         128.00  USD
+Expenses:Food:Alcohol                           107.83  USD
+Expenses:Food:Coffee                             64.68  USD
+Expenses:Food:Groceries                        5890.92  USD
+Expenses:Food:Restaurant                      12567.10  USD
+Expenses:Health:Dental:Insurance                200.10  USD
+Expenses:Health:Life:GroupTermLife             1678.08  USD
+Expenses:Health:Medical:Insurance              1889.22  USD
+Expenses:Health:Vision:Insurance               2918.70  USD
+Expenses:Home:Electricity                      2015.00  USD
+Expenses:Home:Internet                         2479.88  USD
+Expenses:Home:Phone                            1874.08  USD
+Expenses:Home:Rent                            74400.00  USD
+Expenses:Taxes:Y2021:US:CityNYC                4547.92  USD
+Expenses:Taxes:Y2021:US:Federal               28281.60  USD
+Expenses:Taxes:Y2021:US:Federal:PreTax401k    18500.00  IRAUSD
+Expenses:Taxes:Y2021:US:Medicare               2772.12  USD
+Expenses:Taxes:Y2021:US:SDI                      29.12  USD
+Expenses:Taxes:Y2021:US:SocSec                 7000.04  USD
+Expenses:Taxes:Y2021:US:State                  9893.93  USD
+Expenses:Taxes:Y2022:US:CityNYC                4547.92  USD
+Expenses:Taxes:Y2022:US:Federal               28028.99  USD
+Expenses:Taxes:Y2022:US:Federal:PreTax401k    18500.00  IRAUSD
+Expenses:Taxes:Y2022:US:Medicare               2772.12  USD
+Expenses:Taxes:Y2022:US:SDI                      29.12  USD
+Expenses:Taxes:Y2022:US:SocSec                 7000.04  USD
+Expenses:Taxes:Y2022:US:State                  9727.67  USD
+Expenses:Taxes:Y2023:US:CityNYC                2973.64  USD
+Expenses:Taxes:Y2023:US:Federal               18069.64  USD
+Expenses:Taxes:Y2023:US:Federal:PreTax401k    18500.00  IRAUSD
+Expenses:Taxes:Y2023:US:Medicare               1812.54  USD
+Expenses:Taxes:Y2023:US:SDI                      19.04  USD
+Expenses:Taxes:Y2023:US:SocSec                 4786.18  USD
+Expenses:Taxes:Y2023:US:State                  6206.36  USD
+Expenses:Transport:Tram                        3480.00  USD
+Expenses:Vacation                               360     VACHR
+Income:US:ETrade:GLD:Dividend                   -52.22  USD
+Income:US:ETrade:ITOT:Dividend                  -96.14  USD
+Income:US:ETrade:PnL                           -261.51  USD
+Income:US:ETrade:VEA:Dividend                   -48.20  USD
+Income:US:ETrade:VHT:Dividend                  -343.82  USD
+Income:US:Federal:PreTax401k                 -55500.00  IRAUSD
+Income:US:Hooli:GroupTermLife                 -1678.08  USD
+Income:US:Hooli:Match401k                    -27750.00  USD
+Income:US:Hooli:Salary                      -318461.22  USD
+Income:US:Hooli:Vacation                       -345     VACHR
+Liabilities:AccountsPayable                
+Liabilities:US:Chase:Slate                    -3140.08  USD

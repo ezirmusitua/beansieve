@@ -1,29 +1,3 @@
-option "title" "Example Beancount file"
-option "name_assets" "Assets"
-option "name_liabilities" "Liabilities"
-option "name_equity" "Equity"
-option "name_income" "Income"
-option "name_expenses" "Expenses"
-option "account_previous_balances" "Opening-Balances"
-option "account_previous_earnings" "Earnings:Previous"
-option "account_previous_conversions" "Conversions:Previous"
-option "account_current_earnings" "Earnings:Current"
-option "account_current_conversions" "Conversions:Current"
-option "conversion_currency" "NOTHING"
-option "inferred_tolerance_multiplier" "0.5"
-option "infer_tolerance_from_cost" "FALSE"
-option "operating_currency" "USD"
-option "render_commas" "FALSE"
-option "plugin_processing_mode" "default"
-option "long_string_maxlines" "64"
-option "booking_method" "STRICT"
-option "allow_pipe_separator" "FALSE"
-option "allow_deprecated_none_for_tags_and_links" "FALSE"
-option "insert_pythonpath" "FALSE"
-
-include "./Etrade.beancount"
-include "./Payroll.beancount"
-
 1792-01-01 commodity USD
 	export: "CASH"
 	name: "US Dollar"
@@ -2087,6 +2061,10 @@ include "./Payroll.beancount"
 
 2021-09-17 price GLD 52.64 USD
 
+2021-09-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 0.00 USD
+	Income:US:ETrade:VHT:Dividend 0.00 USD
+
 2021-09-19 * "Verizon Wireless" ""  
 	Assets:US:BofA:Checking -53.12 USD
 	Expenses:Home:Phone 53.12 USD
@@ -2181,6 +2159,12 @@ include "./Payroll.beancount"
 2021-10-06 * "Cafe Modagor" "Eating out with Julie"  
 	Liabilities:US:Chase:Slate -45.15 USD
 	Expenses:Food:Restaurant 45.15 USD
+
+2021-10-06 * "" "Sell shares of ITOT"  
+	Assets:US:ETrade:ITOT -32 ITOT { 134.69 USD, 2021-09-27 } @ 135.90 USD
+	Assets:US:ETrade:Cash 4339.85 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL -38.72 USD
 
 2021-10-07 * "Cafe Modagor" "Eating out with work buddies"  
 	Liabilities:US:Chase:Slate -58.56 USD
@@ -2634,6 +2618,10 @@ include "./Payroll.beancount"
 	Liabilities:US:Chase:Slate -43.17 USD
 	Expenses:Food:Groceries 43.17 USD
 
+2021-12-17 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 48.20 USD
+	Income:US:ETrade:VEA:Dividend -48.20 USD
+
 2021-12-17 price VBMPX 154.98 USD
 
 2021-12-17 price RGAGX 166.86 USD
@@ -2911,6 +2899,12 @@ include "./Payroll.beancount"
 	Expenses:Food:Restaurant 31.48 USD
 
 2022-01-24 balance Assets:US:BofA:Checking 5329.81 USD 
+
+2022-01-24 * "" "Sell shares of GLD"  
+	Assets:US:ETrade:GLD -17 GLD { 51.96 USD, 2021-11-21 } @ 53.40 USD
+	Assets:US:ETrade:Cash 898.85 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL -24.48 USD
 
 2022-01-24 * "" "Investing 40% of cash in VBMPX"  
 	Assets:US:Vanguard:VBMPX 3.074 VBMPX { 156.14 USD, 2022-01-24 }
@@ -3442,6 +3436,10 @@ include "./Payroll.beancount"
 2022-03-18 * "Verizon Wireless" ""  
 	Assets:US:BofA:Checking -69.41 USD
 	Expenses:Home:Phone 69.41 USD
+
+2022-03-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 52.22 USD
+	Income:US:ETrade:GLD:Dividend -52.22 USD
 
 2022-03-18 * "" "Employer match for contribution"  
 	Assets:US:Vanguard:Cash 600.00 USD
@@ -3990,6 +3988,12 @@ include "./Payroll.beancount"
 	Liabilities:US:Chase:Slate -59.25 USD
 	Expenses:Food:Groceries 59.25 USD
 
+2022-05-28 * "" "Sell shares of VHT"  
+	Assets:US:ETrade:VHT -10 VHT { 100.45 USD, 2022-02-04 } @ 109.79 USD
+	Assets:US:ETrade:Cash 1088.95 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL -93.40 USD
+
 2022-05-29 * "China Garden" "Eating out alone"  
 	Liabilities:US:Chase:Slate -18.84 USD
 	Expenses:Food:Restaurant 18.84 USD
@@ -4147,6 +4151,10 @@ include "./Payroll.beancount"
 2022-06-18 * "Rose Flower" "Eating out "  
 	Liabilities:US:Chase:Slate -22.64 USD
 	Expenses:Food:Restaurant 22.64 USD
+
+2022-06-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 55.91 USD
+	Income:US:ETrade:VHT:Dividend -55.91 USD
 
 2022-06-20 * "Verizon Wireless" ""  
 	Assets:US:BofA:Checking -43.75 USD
@@ -4379,6 +4387,12 @@ include "./Payroll.beancount"
 2022-07-12 * "Jewel of Morroco" "Eating out with Bill"  
 	Liabilities:US:Chase:Slate -65.10 USD
 	Expenses:Food:Restaurant 65.10 USD
+
+2022-07-12 * "" "Sell shares of VEA"  
+	Assets:US:ETrade:VEA -39 VEA { 55.56 USD, 2021-10-15 } @ 50.55 USD
+	Assets:US:ETrade:Cash 1962.50 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL 195.39 USD
 
 2022-07-13 * "Onion Market" "Buying groceries"  
 	Liabilities:US:Chase:Slate -54.86 USD
@@ -4613,6 +4627,12 @@ include "./Payroll.beancount"
 
 2022-08-13 balance Liabilities:US:Chase:Slate -1591.61 USD 
 
+2022-08-15 * "" "Sell shares of ITOT"  
+	Assets:US:ETrade:ITOT -6 ITOT { 137.59 USD, 2021-11-21 } @ 147.14 USD
+	Assets:US:ETrade:Cash 873.89 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL -57.30 USD
+
 2022-08-16 * "Goba Goba" "Eating out "  
 	Liabilities:US:Chase:Slate -39.16 USD
 	Expenses:Food:Restaurant 39.16 USD
@@ -4829,6 +4849,10 @@ include "./Payroll.beancount"
 2022-09-18 * "Jewel of Morroco" "Eating out with Natasha"  
 	Liabilities:US:Chase:Slate -61.94 USD
 	Expenses:Food:Restaurant 61.94 USD
+
+2022-09-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 79.78 USD
+	Income:US:ETrade:VHT:Dividend -79.78 USD
 
 2022-09-19 * "China Garden" "Eating out after work"  
 	Liabilities:US:Chase:Slate -61.93 USD
@@ -5413,6 +5437,10 @@ include "./Payroll.beancount"
 	Liabilities:US:Chase:Slate -60.80 USD
 	Expenses:Food:Restaurant 60.80 USD
 
+2022-12-17 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 96.14 USD
+	Income:US:ETrade:VHT:Dividend -96.14 USD
+
 2022-12-18 * "Bar Crudo" "" #trip-san-francisco-2022 
 	Liabilities:US:Chase:Slate -63.40 USD
 	Expenses:Food:Restaurant 63.40 USD
@@ -5981,6 +6009,12 @@ include "./Payroll.beancount"
 	Assets:US:Hooli:Vacation 5 VACHR
 	Income:US:Hooli:Vacation -5 VACHR
 
+2023-03-03 * "" "Sell shares of ITOT"  
+	Assets:US:ETrade:ITOT -25 ITOT { 150.92 USD, 2022-09-07 } @ 160.64 USD
+	Assets:US:ETrade:Cash 4007.05 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL -243.00 USD
+
 2023-03-03 * "" "Employer match for contribution"  
 	Assets:US:Vanguard:Cash 600.00 USD
 	Income:US:Hooli:Match401k -600.00 USD
@@ -6104,6 +6138,10 @@ include "./Payroll.beancount"
 2023-03-17 price VHT 124.02 USD
 
 2023-03-17 price GLD 64.36 USD
+
+2023-03-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 96.14 USD
+	Income:US:ETrade:ITOT:Dividend -96.14 USD
 
 2023-03-19 * "China Garden" "Eating out with Joe"  
 	Liabilities:US:Chase:Slate -26.71 USD
@@ -6780,6 +6818,10 @@ include "./Payroll.beancount"
 	Liabilities:US:Chase:Slate -23.35 USD
 	Expenses:Food:Restaurant 23.35 USD
 
+2023-06-18 * "" "Dividends on portfolio"  
+	Assets:US:ETrade:Cash 111.99 USD
+	Income:US:ETrade:VHT:Dividend -111.99 USD
+
 2023-06-19 * "China Garden" "Eating out after work"  
 	Liabilities:US:Chase:Slate -29.91 USD
 	Expenses:Food:Restaurant 29.91 USD
@@ -7202,49 +7244,3 @@ include "./Payroll.beancount"
 2023-08-14 * "Jewel of Morroco" "Eating out after work"  
 	Liabilities:US:Chase:Slate -24.63 USD
 	Expenses:Food:Restaurant 24.63 USD
-
-2023-08-16 * "Cafe Modagor" "Eating out alone"  
-	Liabilities:US:Chase:Slate -30.67 USD
-	Expenses:Food:Restaurant 30.67 USD
-
-2023-08-17 * "Hooli" "Payroll"  
-	Assets:US:BofA:Checking 2550.60 USD
-	Income:US:Hooli:Salary -4615.38 USD
-	Income:US:Hooli:GroupTermLife -24.32 USD
-	Expenses:Health:Life:GroupTermLife 24.32 USD
-	Expenses:Health:Dental:Insurance 2.90 USD
-	Expenses:Health:Medical:Insurance 27.38 USD
-	Expenses:Health:Vision:Insurance 42.30 USD
-	Expenses:Taxes:Y2023:US:Medicare 106.62 USD
-	Expenses:Taxes:Y2023:US:Federal 1062.92 USD
-	Expenses:Taxes:Y2023:US:State 365.08 USD
-	Expenses:Taxes:Y2023:US:CityNYC 174.92 USD
-	Expenses:Taxes:Y2023:US:SDI 1.12 USD
-	Expenses:Taxes:Y2023:US:SocSec 281.54 USD
-	Assets:US:Federal:PreTax401k 0.00 IRAUSD
-	Assets:US:Hooli:Vacation 5 VACHR
-	Income:US:Hooli:Vacation -5 VACHR
-
-2023-08-18 * "" "Transfering accumulated savings to other account"  
-	Assets:US:BofA:Checking -4500 USD
-	Assets:US:ETrade:Cash 4500 USD
-
-2023-08-18 * "Corner Deli" "Buying groceries"  
-	Liabilities:US:Chase:Slate -93.65 USD
-	Expenses:Food:Groceries 93.65 USD
-
-2023-08-18 price VBMPX 201.66 USD
-
-2023-08-18 price RGAGX 176.96 USD
-
-2023-08-18 price ITOT 162.49 USD
-
-2023-08-18 price VEA 46.64 USD
-
-2023-08-18 price VHT 134.28 USD
-
-2023-08-18 price GLD 65.56 USD
-
-2023-08-21 * "Goba Goba" "Eating out with Julie"  
-	Liabilities:US:Chase:Slate -47.63 USD
-	Expenses:Food:Restaurant 47.63 USD
