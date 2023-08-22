@@ -10,7 +10,8 @@ class BeanfileWriter():
         return f"{date} {self.directive_content()}{self.multiline_content()}\n"
 
     def directive_content(self):
-        raise Exception("Writer not implemented")
+        raise Exception(
+            f"{type(self._entry)} directive content not implemented")
 
     def multiline_content(self):
         content = ""

@@ -1,8 +1,9 @@
-from .Entries import Entries
+from typing import Dict, List, Tuple
+
 from .Entry import Entry
+from .beanfile.Reader import BeancountFileReader
+from .beanfile.utils import write_beancount, write_main_beancount
 from .fs import mkdir
-from typing import List, Tuple, Dict
-from pathlib import Path
 
 
 RULE_SEP = ","
@@ -19,36 +20,27 @@ def split_rules(_rules: str):
     return rules
 
 
-def build_beancount_content(entries: List[Entry]):
-    return "\n".join([entry.to_beancount() for entry in entries])
-
-
 def aggregate(source: str, dest: str, _rules: str):
     mkdir(dest)
     rules = split_rules(_rules)
-    result: Dict[str, List[Entry]] = {name: list() for (name, _) in rules}
-    main_file = list()
+    key_entries: Dict[str, List[Entry]] = {name: list() for (name, _) in rules}
+    main_entries = list()
+    entries, option = BeancountFileReader.read(source)
 
-    for entry in Entries.from_beancount(source):
-        to_name = "Main"
+    for entry in entries:
+        to_key = "Main"
         for (name, pattern) in rules:
-            matched = entry.test(pattern)
+            matched = entry.test_account(pattern)
             if (matched):
-                to_name = name
+                to_key = name
                 break
-        if to_name == "Main":
-            main_file.append(entry)
+        if to_key == "Main":
+            main_entries.append(entry)
         else:
-            result[to_name].append(entry)
+            key_entries[to_key].append(entry)
 
-    for (key, entries) in result.items():
-        key_dest = Path(dest).joinpath(f"{key}.beancount")
-        content = build_beancount_content(entries)
-        key_dest.write_text(content, encoding="utf-8")
+    for (key, entries) in key_entries.items():
+        write_beancount(dest, key, entries)
 
-    main_dest = Path(dest).joinpath("Main.beancount")
-    includes = "\n".join(
-        [f"include \"./{name}.beancount\"" for name in result.keys()])
-    content = "option \"operating_currency\" \"USD\"\n\n" + \
-        f"{includes}\n\n{build_beancount_content(main_file)}"
-    main_dest.write_text(content)
+    write_main_beancount(dest, "Main", option, list(
+        key_entries.keys()), main_entries)

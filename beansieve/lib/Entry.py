@@ -1,6 +1,7 @@
 import re
+from typing import Any, NamedTuple
+
 from beancount.core import data as BeancountEntries
-from typing import NamedTuple, Any
 
 from beansieve.lib.beanfile import BeanfileWriterFactory
 
@@ -25,18 +26,21 @@ class Entry(object):
     def to_sql(self, connection):
         pass
 
-    def to_beancount(self):
-        writer = BeanfileWriterFactory.create(self._entry)
-        return writer.build()
+    def test_date(self, predicate):
+        return predicate(self._entry.date)
 
-    def test(self, pattern, field="posting_account"):
-        if field == "posting_account" and not isinstance(self._entry, BeancountEntries.Transaction):
+    def test_account(self, pattern):
+        if not isinstance(self._entry, BeancountEntries.Transaction):
             return False
         for posting in self._entry.postings:
             if re.match(pattern, posting.account):
                 return True
 
         return False
+
+    def to_beancount(self):
+        writer = BeanfileWriterFactory.create(self._entry)
+        return writer.build()
 
     @staticmethod
     def from_beancount(entry):

@@ -1,6 +1,8 @@
-import json
-from pathlib import Path
-from typing import List
+from datetime import date as Date, timedelta
+
+from .beanfile.Reader import BeancountFileReader
+from .beanfile.utils import write_beancount, write_main_beancount
+from .fs import mkdir
 
 DefaultDirectiveMapping = [
     {"directives": ["open", "balance", "pad", "close"], "name": "account"},
@@ -13,5 +15,31 @@ DefaultDirectiveMapping = [
 ]
 
 
+def get_timedelta(period: str):
+    if period.endswith("d"):
+        return timedelta(days=int(period[:-1]))
+    if period.endswith("w"):
+        return timedelta(days=int(period[:-1]) * 7)
+    if period.endswith("m"):
+        return timedelta(days=int(period[:-1]) * 30)
+    raise Exception(f"Invalid period {period}")
+
+
 def archive(source: str, dest: str, period: str):
-    raise Exception("Not implemented")
+    mkdir(dest)
+    now = Date.today()
+
+    def should_archive(x: Date): return x < now - get_timedelta(period)
+
+    archived_entries = list()
+    main_entries = list()
+    entries, option = BeancountFileReader.read(source)
+
+    for entry in entries:
+        if entry.test_date(should_archive):
+            archived_entries.append(entry)
+        else:
+            main_entries.append(entry)
+
+    write_beancount(dest, "Archived", archived_entries)
+    write_main_beancount(dest, "Main", option, ["Archived"], main_entries)
