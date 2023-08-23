@@ -15,28 +15,15 @@ DefaultDirectiveMapping = [
 ]
 
 
-def get_timedelta(period: str):
-    if period.endswith("d"):
-        return timedelta(days=int(period[:-1]))
-    if period.endswith("w"):
-        return timedelta(days=int(period[:-1]) * 7)
-    if period.endswith("m"):
-        return timedelta(days=int(period[:-1]) * 30)
-    raise Exception(f"Invalid period {period}")
-
-
 def archive(source: str, dest: str, period: str):
     mkdir(dest)
-    now = Date.today()
-
-    def should_archive(x: Date): return x < now - get_timedelta(period)
 
     archived_book = list()
     main_book = list()
     entries, option = BeancountFileReader.read(source)
 
     for entry in entries:
-        if entry.test_date(should_archive):
+        if entry < period:
             archived_book.append(entry)
         else:
             main_book.append(entry)

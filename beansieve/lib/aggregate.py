@@ -1,4 +1,5 @@
-from typing import Dict, List, Tuple
+import re
+from typing import Dict, List, Pattern, Tuple
 
 from beansieve.lib.beanfile.Reader import BeancountFileReader
 from beansieve.lib.beanfile.utils import write_beancount, write_main_beancount
@@ -11,11 +12,11 @@ KV_SEP = "|"
 
 
 def split_rules(_rules: str):
-    def _split_rule(r: str) -> Tuple[str, str]:
+    def _split_rule(r: str) -> Tuple[str, Pattern[str]]:
         parts = r.split(KV_SEP)
         if len(parts) != 2:
             raise Exception("Invalid rule")
-        return (parts[0], parts[1])
+        return (parts[0], re.compile(parts[1]))
     rules = list(map(_split_rule, _rules.split(RULE_SEP)))
     return rules
 
@@ -30,8 +31,7 @@ def aggregate(source: str, dest: str, _rules: str):
     for entry in entries:
         to_key = "Main"
         for (name, pattern) in rules:
-            matched = entry.test_account(pattern)
-            if (matched):
+            if entry == pattern:
                 to_key = name
                 break
         if to_key == "Main":

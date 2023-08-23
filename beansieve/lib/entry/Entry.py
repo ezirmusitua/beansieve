@@ -1,25 +1,24 @@
 import re
-from typing import Any
+from typing import Any, Pattern
 
-from beancount.core import data as BeancountEntries
+
 from beansieve.lib.beanfile import BeanfileWriterFactory
+from beansieve.lib.predicate import account_name_like, date_less_than_today, type_is
 
 
 class Entry(object):
-
     def __init__(self, entry: Any):
         self._entry = entry
 
-    def test_date(self, predicate):
-        return predicate(self._entry.date)
+    def __eq__(self, other: str | Pattern):
+        if type(other) is str:
+            return type_is(self._entry, other)
+        if isinstance(other, re.Pattern):
+            return account_name_like(self._entry, other)
+        raise Exception("Unsupported comparison")
 
-    def test_account(self, pattern):
-        if not isinstance(self._entry, BeancountEntries.Transaction):
-            return False
-        for posting in self._entry.postings:
-            if re.match(pattern, posting.account):
-                return True
-        return False
+    def __lt__(self, period):
+        return date_less_than_today(self._entry, period)
 
     def write(self):
         writer = BeanfileWriterFactory.create(self._entry)

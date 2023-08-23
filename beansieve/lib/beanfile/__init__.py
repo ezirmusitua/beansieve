@@ -1,4 +1,4 @@
-from beancount.core import data as BeancountEntryTypes
+from beansieve.lib.predicate import type_is
 
 
 from .Balance import BalanceWriter
@@ -15,34 +15,26 @@ from .Query import QueryWriter
 from .Transaction import TransactionWriter
 from .Writer import BeanfileWriter
 
+WriterMapping = dict(
+    balance=BalanceWriter,
+    close=CloseWriter,
+    commodity=CommodityWriter,
+    custom=CustomWriter,
+    document=DocumentWriter,
+    event=EventWriter,
+    note=NoteWriter,
+    open=OpenWriter,
+    pad=PadWriter,
+    price=PriceWriter,
+    query=QueryWriter,
+    transaction=TransactionWriter
+)
+
 
 class BeanfileWriterFactory(object):
     @staticmethod
     def create(entry) -> BeanfileWriter:
-        if isinstance(entry, BeancountEntryTypes.Balance):
-            return BalanceWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Close):
-            return CloseWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Commodity):
-            return CommodityWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Document):
-            return DocumentWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Event):
-            return EventWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Note):
-            return NoteWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Open):
-            return OpenWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Pad):
-            return PadWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Price):
-            return PriceWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Query):
-            return QueryWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Transaction):
-            return TransactionWriter(entry)
-        elif isinstance(entry, BeancountEntryTypes.Custom):
-            return CustomWriter(entry)
-        else:
-            raise Exception(
-                f"{type(entry).__name__} Writer not implemented: ", entry)
+        for type, cls in WriterMapping.items():
+            if type_is(entry, type):
+                return cls(entry)
+        raise Exception(f"Writer not implemented for ", entry)
