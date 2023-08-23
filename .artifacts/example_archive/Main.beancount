@@ -21,16 +21,20 @@ option "allow_pipe_separator" "FALSE"
 option "allow_deprecated_none_for_tags_and_links" "FALSE"
 option "insert_pythonpath" "FALSE"
 
-include "./Archived.beancount"
+include "./account.beancount"
+include "./commodity.beancount"
+include "./custom.beancount"
+include "./document.beancount"
+include "./event.beancount"
+include "./note.beancount"
+include "./price.beancount"
+include "./query.beancount"
+include "./history.beancount"
 
-2023-08-17 * "Onion Market" "Buying groceries"  
-	Liabilities:US:Chase:Slate -63.53 USD
-	Expenses:Food:Groceries 63.53 USD
-
-2023-08-17 * "BayBook" "Payroll"  
+2023-08-17 * "Hooli" "Payroll"  
 	Assets:US:BofA:Checking 2550.60 USD
-	Income:US:BayBook:Salary -4615.38 USD
-	Income:US:BayBook:GroupTermLife -24.32 USD
+	Income:US:Hooli:Salary -4615.38 USD
+	Income:US:Hooli:GroupTermLife -24.32 USD
 	Expenses:Health:Life:GroupTermLife 24.32 USD
 	Expenses:Health:Dental:Insurance 2.90 USD
 	Expenses:Health:Medical:Insurance 27.38 USD
@@ -42,36 +46,27 @@ include "./Archived.beancount"
 	Expenses:Taxes:Y2023:US:SDI 1.12 USD
 	Expenses:Taxes:Y2023:US:SocSec 281.54 USD
 	Assets:US:Federal:PreTax401k 0.00 IRAUSD
-	Assets:US:BayBook:Vacation 5 VACHR
-	Income:US:BayBook:Vacation -5 VACHR
+	Assets:US:Hooli:Vacation 5 VACHR
+	Income:US:Hooli:Vacation -5 VACHR
 
-2023-08-18 * "" "Transfering accumulated savings to other account"  
-	Assets:US:BofA:Checking -5000 USD
-	Assets:US:ETrade:Cash 5000 USD
+2023-08-18 price VBMPX 39.36 USD
 
-2023-08-18 * "" "Buy shares of VHT"  
-	Assets:US:ETrade:Cash -5336.44 USD
-	Assets:US:ETrade:VHT 23 VHT { 231.63 USD, 2023-08-18 }
-	Expenses:Financial:Commissions 8.95 USD
+2023-08-18 price RGAGX 120.48 USD
 
-2023-08-18 price VBMPX 222.57 USD
+2023-08-18 price ITOT 148.51 USD
 
-2023-08-18 price RGAGX 136.78 USD
+2023-08-18 price VEA 178.78 USD
 
-2023-08-18 price ITOT 114.12 USD
+2023-08-18 price VHT 133.05 USD
 
-2023-08-18 price VEA 83.25 USD
+2023-08-18 price GLD 103.06 USD
 
-2023-08-18 price VHT 231.63 USD
+2023-08-19 * "Chichipotle" "Eating out with Natasha"  
+	Liabilities:US:Chase:Slate -46.31 USD
+	Expenses:Food:Restaurant 46.31 USD
 
-2023-08-18 price GLD 146.92 USD
+2023-08-21 balance Liabilities:US:Chase:Slate -2767.19 USD 
 
-2023-08-19 * "China Garden" "Eating out with Joe"  
-	Liabilities:US:Chase:Slate -22.80 USD
-	Expenses:Food:Restaurant 22.80 USD
-
-2023-08-21 balance Liabilities:US:Chase:Slate -3289.70 USD 
-
-2023-08-22 * "Goba Goba" "Eating out with Natasha"  
-	Liabilities:US:Chase:Slate -26.23 USD
-	Expenses:Food:Restaurant 26.23 USD
+2023-08-21 * "Onion Market" "Buying groceries"  
+	Liabilities:US:Chase:Slate -85.78 USD
+	Expenses:Food:Groceries 85.78 USD

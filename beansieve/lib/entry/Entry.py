@@ -17,6 +17,9 @@ class Entry(object):
             return account_name_like(self._entry, other)
         raise Exception("Unsupported comparison")
 
+    def __ne__(self, other: str | Pattern):
+        return not (self == other)
+
     def __lt__(self, period):
         return date_less_than_today(self._entry, period)
 

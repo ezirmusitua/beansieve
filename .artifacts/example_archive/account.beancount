@@ -1,0 +1,135 @@
+1980-05-12 open Equity:Opening-Balances  ""
+
+1980-05-12 open Liabilities:AccountsPayable  ""
+
+1980-05-12 open Liabilities:US:Chase:Slate USD ""
+
+1980-05-12 open Income:US:Federal:PreTax401k IRAUSD ""
+
+1980-05-12 open Assets:US:Federal:PreTax401k IRAUSD ""
+
+1980-05-12 open Expenses:Food:Groceries  ""
+
+1980-05-12 open Expenses:Food:Restaurant  ""
+
+1980-05-12 open Expenses:Food:Coffee  ""
+
+1980-05-12 open Expenses:Food:Alcohol  ""
+
+1980-05-12 open Expenses:Transport:Tram  ""
+
+1980-05-12 open Expenses:Home:Rent  ""
+
+1980-05-12 open Expenses:Home:Electricity  ""
+
+1980-05-12 open Expenses:Home:Internet  ""
+
+1980-05-12 open Expenses:Home:Phone  ""
+
+1980-05-12 open Expenses:Financial:Fees  ""
+
+1980-05-12 open Expenses:Financial:Commissions  ""
+
+2021-01-01 open Assets:US:BofA  ""
+	address: "123 America Street, LargeTown, USA"
+	institution: "Bank of America"
+	phone: "+1.012.345.6789"
+
+2021-01-01 open Assets:US:BofA:Checking USD ""
+	account: "00234-48574897"
+
+2021-01-01 open Assets:US:ETrade:Cash USD ""
+
+2021-01-01 open Assets:US:ETrade:ITOT ITOT ""
+
+2021-01-01 open Assets:US:ETrade:VEA VEA ""
+
+2021-01-01 open Assets:US:ETrade:VHT VHT ""
+
+2021-01-01 open Assets:US:ETrade:GLD GLD ""
+
+2021-01-01 open Income:US:ETrade:PnL USD ""
+
+2021-01-01 open Income:US:ETrade:ITOT:Dividend USD ""
+
+2021-01-01 open Income:US:ETrade:VEA:Dividend USD ""
+
+2021-01-01 open Income:US:ETrade:VHT:Dividend USD ""
+
+2021-01-01 open Income:US:ETrade:GLD:Dividend USD ""
+
+2021-01-01 open Assets:US:Vanguard:VBMPX VBMPX ""
+	number: "882882"
+
+2021-01-01 open Assets:US:Vanguard:RGAGX RGAGX ""
+	number: "882882"
+
+2021-01-01 open Assets:US:Vanguard USD ""
+	address: "P.O. Box 1110, Valley Forge, PA 19482-1110"
+	institution: "Vanguard Group"
+	phone: "+1.800.523.1188"
+
+2021-01-01 open Income:US:Hooli:Match401k USD ""
+
+2021-01-01 open Assets:US:Vanguard:Cash USD ""
+	number: "882882"
+
+2021-01-01 open Income:US:Hooli:Salary USD ""
+
+2021-01-01 open Income:US:Hooli:GroupTermLife USD ""
+
+2021-01-01 open Income:US:Hooli:Vacation VACHR ""
+
+2021-01-01 open Assets:US:Hooli:Vacation VACHR ""
+
+2021-01-01 open Expenses:Vacation VACHR ""
+
+2021-01-01 open Expenses:Health:Life:GroupTermLife  ""
+
+2021-01-01 open Expenses:Health:Medical:Insurance  ""
+
+2021-01-01 open Expenses:Health:Dental:Insurance  ""
+
+2021-01-01 open Expenses:Health:Vision:Insurance  ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:Federal:PreTax401k IRAUSD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:Medicare USD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:Federal USD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:CityNYC USD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:SDI USD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:State USD ""
+
+2021-01-01 open Expenses:Taxes:Y2021:US:SocSec USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:Federal:PreTax401k IRAUSD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:Medicare USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:Federal USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:CityNYC USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:SDI USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:State USD ""
+
+2022-01-01 open Expenses:Taxes:Y2022:US:SocSec USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:Federal:PreTax401k IRAUSD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:Medicare USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:Federal USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:CityNYC USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:SDI USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:State USD ""
+
+2023-01-01 open Expenses:Taxes:Y2023:US:SocSec USD ""
