@@ -1,8 +1,8 @@
 from datetime import date as Date, timedelta
 
-from .beanfile.Reader import BeancountFileReader
-from .beanfile.utils import write_beancount, write_main_beancount
-from .fs import mkdir
+from beansieve.lib.beanfile.Reader import BeancountFileReader
+from beansieve.lib.beanfile.utils import write_beancount, write_main_beancount
+from beansieve.lib.fs import mkdir
 
 DefaultDirectiveMapping = [
     {"directives": ["open", "balance", "pad", "close"], "name": "account"},
@@ -31,15 +31,15 @@ def archive(source: str, dest: str, period: str):
 
     def should_archive(x: Date): return x < now - get_timedelta(period)
 
-    archived_entries = list()
-    main_entries = list()
+    archived_book = list()
+    main_book = list()
     entries, option = BeancountFileReader.read(source)
 
     for entry in entries:
         if entry.test_date(should_archive):
-            archived_entries.append(entry)
+            archived_book.append(entry)
         else:
-            main_entries.append(entry)
+            main_book.append(entry)
 
-    write_beancount(dest, "Archived", archived_entries)
-    write_main_beancount(dest, "Main", option, ["Archived"], main_entries)
+    write_beancount(dest, "Archived", archived_book)
+    write_main_beancount(dest, "Main", option, ["Archived"], main_book)

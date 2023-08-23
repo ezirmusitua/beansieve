@@ -1,9 +1,9 @@
 from typing import Dict, List, Tuple
 
-from .Entry import Entry
-from .beanfile.Reader import BeancountFileReader
-from .beanfile.utils import write_beancount, write_main_beancount
-from .fs import mkdir
+from beansieve.lib.beanfile.Reader import BeancountFileReader
+from beansieve.lib.beanfile.utils import write_beancount, write_main_beancount
+from beansieve.lib.entry.Entry import Entry
+from beansieve.lib.fs import mkdir
 
 
 RULE_SEP = ","

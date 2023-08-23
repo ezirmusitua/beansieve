@@ -1,12 +1,12 @@
 from pathlib import Path
 from typing import List
 
-from ..Entry import Entry
-from .Option import Option
+from beansieve.lib.entry.Entry import Entry
+from beansieve.lib.beanfile.Option import Option
 
 
 def build_beancount_content(entries: List[Entry]):
-    return "\n".join([entry.to_beancount() for entry in entries])
+    return "\n".join([entry.write() for entry in entries])
 
 
 def write_beancount(dest: str, key: str, entries: List[Entry]):

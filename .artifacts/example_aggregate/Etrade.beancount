@@ -1,67 +1,73 @@
 2021-09-18 * "" "Dividends on portfolio"  
 	Assets:US:ETrade:Cash 0.00 USD
-	Income:US:ETrade:VHT:Dividend 0.00 USD
+	Income:US:ETrade:ITOT:Dividend 0.00 USD
 
-2021-10-06 * "" "Sell shares of ITOT"  
-	Assets:US:ETrade:ITOT -32 ITOT { 134.69 USD, 2021-09-27 } @ 135.90 USD
-	Assets:US:ETrade:Cash 4339.85 USD
+2021-10-08 * "" "Sell shares of VHT"  
+	Assets:US:ETrade:VHT -12 VHT { 110.18 USD, 2021-09-23 } @ 111.82 USD
+	Assets:US:ETrade:Cash 1332.89 USD
 	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL -38.72 USD
+	Income:US:ETrade:PnL -19.68 USD
+
+2021-11-11 * "" "Sell shares of VEA"  
+	Assets:US:ETrade:VEA -10 VEA { 82.62 USD, 2021-10-10 } @ 81.70 USD
+	Assets:US:ETrade:Cash 808.05 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL 9.20 USD
 
 2021-12-17 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 48.20 USD
-	Income:US:ETrade:VEA:Dividend -48.20 USD
+	Assets:US:ETrade:Cash 37.83 USD
+	Income:US:ETrade:GLD:Dividend -37.83 USD
 
-2022-01-24 * "" "Sell shares of GLD"  
-	Assets:US:ETrade:GLD -17 GLD { 51.96 USD, 2021-11-21 } @ 53.40 USD
-	Assets:US:ETrade:Cash 898.85 USD
+2022-02-09 * "" "Sell shares of VEA"  
+	Assets:US:ETrade:VEA -17 VEA { 80.35 USD, 2021-09-23 } @ 78.30 USD
+	Assets:US:ETrade:Cash 1322.15 USD
 	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL -24.48 USD
+	Income:US:ETrade:PnL 34.85 USD
 
 2022-03-18 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 52.22 USD
-	Income:US:ETrade:GLD:Dividend -52.22 USD
+	Assets:US:ETrade:Cash 42.00 USD
+	Income:US:ETrade:GLD:Dividend -42.00 USD
 
-2022-05-28 * "" "Sell shares of VHT"  
-	Assets:US:ETrade:VHT -10 VHT { 100.45 USD, 2022-02-04 } @ 109.79 USD
-	Assets:US:ETrade:Cash 1088.95 USD
+2022-05-14 * "" "Sell shares of VEA"  
+	Assets:US:ETrade:VEA -5 VEA { 77.30 USD, 2022-02-12 } @ 77.25 USD
+	Assets:US:ETrade:Cash 377.30 USD
 	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL -93.40 USD
+	Income:US:ETrade:PnL 0.25 USD
 
 2022-06-18 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 55.91 USD
-	Income:US:ETrade:VHT:Dividend -55.91 USD
+	Assets:US:ETrade:Cash 42.00 USD
+	Income:US:ETrade:ITOT:Dividend -42.00 USD
 
-2022-07-12 * "" "Sell shares of VEA"  
-	Assets:US:ETrade:VEA -39 VEA { 55.56 USD, 2021-10-15 } @ 50.55 USD
-	Assets:US:ETrade:Cash 1962.50 USD
+2022-08-09 * "" "Sell shares of ITOT"  
+	Assets:US:ETrade:ITOT -2 ITOT { 150.16 USD, 2022-02-12 } @ 154.27 USD
+	Assets:US:ETrade:Cash 299.59 USD
 	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL 195.39 USD
-
-2022-08-15 * "" "Sell shares of ITOT"  
-	Assets:US:ETrade:ITOT -6 ITOT { 137.59 USD, 2021-11-21 } @ 147.14 USD
-	Assets:US:ETrade:Cash 873.89 USD
-	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL -57.30 USD
+	Income:US:ETrade:PnL -8.22 USD
 
 2022-09-18 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 79.78 USD
-	Income:US:ETrade:VHT:Dividend -79.78 USD
+	Assets:US:ETrade:Cash 59.22 USD
+	Income:US:ETrade:ITOT:Dividend -59.22 USD
+
+2022-10-23 * "" "Sell shares of VHT"  
+	Assets:US:ETrade:VHT -11 VHT { 127.51 USD, 2022-08-21 } @ 122.33 USD
+	Assets:US:ETrade:Cash 1336.68 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL 56.98 USD
 
 2022-12-17 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 96.14 USD
-	Income:US:ETrade:VHT:Dividend -96.14 USD
-
-2023-03-03 * "" "Sell shares of ITOT"  
-	Assets:US:ETrade:ITOT -25 ITOT { 150.92 USD, 2022-09-07 } @ 160.64 USD
-	Assets:US:ETrade:Cash 4007.05 USD
-	Expenses:Financial:Commissions 8.95 USD
-	Income:US:ETrade:PnL -243.00 USD
+	Assets:US:ETrade:Cash 78.14 USD
+	Income:US:ETrade:VEA:Dividend -78.14 USD
 
 2023-03-18 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 96.14 USD
-	Income:US:ETrade:ITOT:Dividend -96.14 USD
+	Assets:US:ETrade:Cash 78.14 USD
+	Income:US:ETrade:VEA:Dividend -78.14 USD
 
 2023-06-18 * "" "Dividends on portfolio"  
-	Assets:US:ETrade:Cash 111.99 USD
-	Income:US:ETrade:VHT:Dividend -111.99 USD
+	Assets:US:ETrade:Cash 78.14 USD
+	Income:US:ETrade:VEA:Dividend -78.14 USD
+
+2023-07-30 * "" "Sell shares of VHT"  
+	Assets:US:ETrade:VHT -7 VHT { 123.46 USD, 2022-10-15 } @ 117.45 USD
+	Assets:US:ETrade:Cash 813.20 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL 42.07 USD

@@ -1,7 +1,7 @@
 from beancount import loader
 
-from ..Entries import Entries
-from .Option import Option
+from beansieve.lib.beanfile.Option import Option
+from beansieve.lib.entry import Entries
 
 
 class BeancountFileReader(object):

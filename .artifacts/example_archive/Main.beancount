@@ -23,9 +23,12 @@ option "insert_pythonpath" "FALSE"
 
 include "./Archived.beancount"
 
-2023-08-16 * "Cafe Modagor" "Eating out alone"  
-	Liabilities:US:Chase:Slate -30.67 USD
-	Expenses:Food:Restaurant 30.67 USD
+2023-08-16 * "" "Buy shares of VEA"  
+	Assets:US:ETrade:Cash -4489.27 USD
+	Assets:US:ETrade:VEA 52 VEA { 86.16 USD, 2023-08-16 }
+	Expenses:Financial:Commissions 8.95 USD
+
+2023-08-17 balance Liabilities:US:Chase:Slate -3460.25 USD 
 
 2023-08-17 * "Hooli" "Payroll"  
 	Assets:US:BofA:Checking 2550.60 USD
@@ -45,26 +48,26 @@ include "./Archived.beancount"
 	Assets:US:Hooli:Vacation 5 VACHR
 	Income:US:Hooli:Vacation -5 VACHR
 
-2023-08-18 * "" "Transfering accumulated savings to other account"  
-	Assets:US:BofA:Checking -4500 USD
-	Assets:US:ETrade:Cash 4500 USD
+2023-08-18 * "Jewel of Morroco" "Eating out with Natasha"  
+	Liabilities:US:Chase:Slate -38.28 USD
+	Expenses:Food:Restaurant 38.28 USD
 
-2023-08-18 * "Corner Deli" "Buying groceries"  
-	Liabilities:US:Chase:Slate -93.65 USD
-	Expenses:Food:Groceries 93.65 USD
+2023-08-18 price VBMPX 116.14 USD
 
-2023-08-18 price VBMPX 201.66 USD
+2023-08-18 price RGAGX 45.02 USD
 
-2023-08-18 price RGAGX 176.96 USD
+2023-08-18 price ITOT 180.18 USD
 
-2023-08-18 price ITOT 162.49 USD
+2023-08-18 price VEA 85.65 USD
 
-2023-08-18 price VEA 46.64 USD
+2023-08-18 price VHT 116.47 USD
 
-2023-08-18 price VHT 134.28 USD
+2023-08-18 price GLD 70.49 USD
 
-2023-08-18 price GLD 65.56 USD
+2023-08-19 * "Metro Transport Authority" "Tram tickets"  
+	Liabilities:US:Chase:Slate -120.00 USD
+	Expenses:Transport:Tram 120.00 USD
 
-2023-08-21 * "Goba Goba" "Eating out with Julie"  
-	Liabilities:US:Chase:Slate -47.63 USD
-	Expenses:Food:Restaurant 47.63 USD
+2023-08-22 * "Goba Goba" "Eating out with Julie"  
+	Liabilities:US:Chase:Slate -21.75 USD
+	Expenses:Food:Restaurant 21.75 USD

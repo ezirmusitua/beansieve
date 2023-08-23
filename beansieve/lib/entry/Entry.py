@@ -21,17 +21,6 @@ class Entry(object):
                 return True
         return False
 
-    def to_sql(self, connection):
-        pass
-
-    def to_beancount(self):
+    def write(self):
         writer = BeanfileWriterFactory.create(self._entry)
         return writer.build()
-
-    @staticmethod
-    def from_beancount(entry):
-        return Entry(entry)
-
-    @staticmethod
-    def from_sqlite():
-        pass
