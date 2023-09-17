@@ -1,0 +1,347 @@
+Assets:Communication:UKGiffGaff                  1.00       UKGG
+Assets:Current:CMS                              30.75       CNY
+Assets:Current:Card:ABC:7415                     0.78       CNY
+Assets:Current:Card:BOC:3127                 19717.75       CNY
+Assets:Current:Card:BOC:6611                    64          USD
+Assets:Current:Card:CITIC:2813                 637.80       CNY
+Assets:Current:Card:CMB:2758                   -16.75       CNY
+Assets:Current:Card:Depay:2791                  19          USD
+Assets:Current:Cash:CNY                       1391.00       CNY
+Assets:Current:Cash:USD                       1242          USD
+Assets:Current:EWallet:Wepay             
+Assets:Current:Investment:CD:GSCYB       
+Assets:Current:Investment:CD:GSZZY       
+Assets:Current:Investment:CD:JXYLFY      
+Assets:Current:Investment:CD:JXYLFYX     
+Assets:Current:Investment:CD:LHB7T       
+Assets:Current:Investment:CD:PAFX366     
+Assets:Current:Investment:CD:TPYLYY      
+Assets:Current:Investment:CD:ZCB         
+Assets:Current:LQT                            4600.28       CNY
+Assets:Current:OKX:BTC                   
+Assets:Current:OKX:ETH                   
+Assets:Current:OKX:USDT                         31.94       CNY
+Assets:Current:OKX:USDT                       2759.2327     USDT
+Assets:Current:YEB                              32.13       CNY
+Assets:Current:ZZB                           55428.33       CNY
+Assets:Development:OpenAI                        5          USD
+Assets:ECash:EOS:3zirmusitua3            
+Assets:ECash:ETH:3a75                    
+Assets:EWallet:AppleStore1184            
+Assets:Gamble:Fund:000015                    44289.59       SX.000015
+Assets:Gamble:Fund:000043                
+Assets:Gamble:Fund:000371                
+Assets:Gamble:Fund:001167                
+Assets:Gamble:Fund:001549                
+Assets:Gamble:Fund:001678                      987.52       SX.001678
+Assets:Gamble:Fund:001975                
+Assets:Gamble:Fund:002086                
+Assets:Gamble:Fund:003095                
+Assets:Gamble:Fund:004569                
+Assets:Gamble:Fund:005827                
+Assets:Gamble:Fund:007531                
+Assets:Gamble:Fund:008763                
+Assets:Gamble:Fund:100032                
+Assets:Gamble:Fund:110022                
+Assets:Gamble:Fund:110026                     3259.82       SZ.110026
+Assets:Gamble:Fund:16013B                
+Assets:Gamble:Fund:161125                
+Assets:Gamble:Fund:162216                
+Assets:Gamble:Fund:162703                
+Assets:Gamble:Fund:163407                
+Assets:Gamble:Fund:180018                
+Assets:Gamble:Fund:260108                
+Assets:Gamble:Fund:420003                
+Assets:Gamble:Fund:501206                
+Assets:Gamble:Fund:513030                
+Assets:Gamble:Fund:518880                
+Assets:Gamble:Fund:519518                
+Assets:Gamble:OKX:EOS                    
+Assets:Gamble:OKX:ETH                    
+Assets:Gamble:OKX:Strategy               
+Assets:Gamble:OKX:T2T                    
+Assets:Gamble:OKX:Web3:ETH                       0.3518     ETH
+Assets:Gamble:OKX:Web3:NTF:FC22          
+Assets:Gamble:Stock:000651                     500          SZ.000651
+Assets:Gamble:Stock:000725               
+Assets:Gamble:Stock:000938               
+Assets:Gamble:Stock:000977               
+Assets:Gamble:Stock:002073               
+Assets:Gamble:Stock:002288               
+Assets:Gamble:Stock:002475               
+Assets:Gamble:Stock:002959               
+Assets:Gamble:Stock:159820               
+Assets:Gamble:Stock:159847               
+Assets:Gamble:Stock:510900               
+Assets:Gamble:Stock:51300                    15300.00       SS.513000
+Assets:Gamble:Stock:513030               
+Assets:Gamble:Stock:513050               
+Assets:Gamble:Stock:600012               
+Assets:Gamble:Stock:600079               
+Assets:Gamble:Stock:600315               
+Assets:Gamble:Stock:600355               
+Assets:Gamble:Stock:600377               
+Assets:Gamble:Stock:600571               
+Assets:Gamble:Stock:600572               
+Assets:Gamble:Stock:600848               
+Assets:Gamble:Stock:600938               
+Assets:Gamble:Stock:601012                     600.00       SS.601012
+Assets:Gamble:Stock:601088               
+Assets:Gamble:Stock:601318                     400.00       SS.601318
+Assets:Gamble:Stock:601319               
+Assets:Gamble:Stock:601328               
+Assets:Gamble:Stock:601333                    4800.00       SS.601333
+Assets:Gamble:Stock:601857               
+Assets:Gamble:Stock:601919               
+Assets:Gamble:Stock:601988                    4900.00       SS.601988
+Assets:Gamble:Stock:603050               
+Assets:Gamble:Stock:603259               
+Assets:Insurance:QMBZSYLJ                
+Assets:Investment:CD:HTFXQX              
+Assets:Investment:CD:OKX:Bearish         
+Assets:Investment:CD:OKX:DualCoin        
+Assets:Investment:CD:XDC00006003              8400.00       CNY
+Assets:Investment:GC                     
+Assets:Investment:Stock:601328           
+Assets:Receivable                                0.33       CNY
+Assets:Receivable:CRIC                   
+Assets:Receivable:Friend                 
+Assets:Receivable:LHR                         5000.00       CNY
+Assets:Receivable:LJY                    
+Assets:Receivable:MoFang                 
+Assets:Receivable:XBY                       100000.00       CNY
+Assets:SocietySecurity:Housing              127728.41       CNY
+Assets:SocietySecurity:Medicare              19500.94       CNY
+Assets:SocietySecurity:Pension:Gov          100203.66       CNY
+Assets:SocietySecurity:Pension:Persional      3600.00       CNY
+Equity:Gamble:Fund:Alipay                
+Equity:Gamble:OKX:NFT                          342.45       CNY
+Equity:Gamble:Pad                              -24.06       CNY
+Equity:OpenBalance                          -15597.14       CNY
+Equity:Padding                               35885.68       CNY
+Equity:Padding:CerditCard:4885                  36.11       CNY
+Equity:Padding:HB                              182.79       CNY
+Expenses:Alcohol                              3024.35       CNY
+Expenses:Appearance:Clothing                  4532.07       CNY
+Expenses:Appearance:Fitness                   1145.45       CNY
+Expenses:Appearance:Hair                       674.38       CNY
+Expenses:Appearance:Watch                       97.43       CNY
+Expenses:Books                                1400.04       CNY
+Expenses:Charity                               105.00       CNY
+Expenses:Cigarette                           10136.87       CNY
+Expenses:Cleaning                              158.79       CNY
+Expenses:Cloud:Aliyun                          144.99       CNY
+Expenses:Cloud:Other                            21.00       CNY
+Expenses:Cloud:QCloud                          394.57       CNY
+Expenses:Coffee                               1907.09       CNY
+Expenses:Coffee:Equipment                      695.31       CNY
+Expenses:Communication                        2874.77       CNY
+Expenses:Electronic                           1796.45       CNY
+Expenses:Electronic:Computer                 48459.42       CNY
+Expenses:Electronic:Display                   2666.90       CNY
+Expenses:Electronic:GamingDevice               569.74       CNY
+Expenses:Electronic:GamingDevice               394          USD
+Expenses:Electronic:Keyboard                   159.00       CNY
+Expenses:Electronic:Media                     1424.28       CNY
+Expenses:Electronic:Other                       77.60       CNY
+Expenses:Electronic:Phone                     7281.23       CNY
+Expenses:Entertainment:Adult                   996.44       CNY
+Expenses:Entertainment:Gambling                221.00       CNY
+Expenses:Entertainment:Game                   2078.98       CNY
+Expenses:Entertainment:Game                      6          USD
+Expenses:Entertainment:KTV                    1086.00       CNY
+Expenses:Entertainment:Massage                 239.00       CNY
+Expenses:Entertainment:Movie                   726.50       CNY
+Expenses:Entertainment:Other                   380.90       CNY
+Expenses:Entertainment:Park              
+Expenses:Entertainment:Plant                    69.01       CNY
+Expenses:Entertainment:Skateboard              374.50       CNY
+Expenses:Family                             392340.21       CNY
+Expenses:Family:Other                         1335.51       CNY
+Expenses:Fee                                    14.71       CNY
+Expenses:Fee:Alipay                              2.72       CNY
+Expenses:Fee:CMB                               143.00       CNY
+Expenses:Fee:CMS                                67.89       CNY
+Expenses:Fee:Depay                               1          USD
+Expenses:Fee:Gamble                             80.73       CNY
+Expenses:Fee:OKX                               119.82       CNY
+Expenses:Fee:OKX                                10.9718     USDT
+Expenses:Food                                60028.02       CNY
+Expenses:Food:Equipment                       1903.87       CNY
+Expenses:Gamble:Fee                           1220.78       CNY
+Expenses:Gamble:Tax                            336.52       CNY
+Expenses:Gift                                  479.00       CNY
+Expenses:Habit                                 285.00       CNY
+Expenses:Health                               5597.73       CNY
+Expenses:Health:Drug                            94.33       CNY
+Expenses:Housing                             53321.75       CNY
+Expenses:Housing:Cleaning                     2021.71       CNY
+Expenses:Housing:Decoration                     58.77       CNY
+Expenses:Housing:Fee                          4000.00       CNY
+Expenses:Housing:Furniture                    2202.93       CNY
+Expenses:Housing:Other                        1200.99       CNY
+Expenses:Insurance:Unemployment               4660.00       CNY
+Expenses:Investment:CD:Fee                      15.31       CNY
+Expenses:Investment:GC:Fee                     156.85       CNY
+Expenses:Other                              211530.30       CNY
+Expenses:Pet                                  5005.54       CNY
+Expenses:SelfEnhancing                        7100.60       CNY
+Expenses:Social                               1064.80       CNY
+Expenses:Software                             1869.99       CNY
+Expenses:Sport:Equipment                       573.44       CNY
+Expenses:Stationery                              6.00       CNY
+Expenses:Subscription:88                       264.00       CNY
+Expenses:Subscription:Bafang                    31.95       CNY
+Expenses:Subscription:BaiduPan                  55.00       CNY
+Expenses:Subscription:BilibiliManga             25.00       CNY
+Expenses:Subscription:CreamData                201.90       CNY
+Expenses:Subscription:Duolingo                  40.00       CNY
+Expenses:Subscription:FishPort                  53.15       CNY
+Expenses:Subscription:Fnf                      280.99       CNY
+Expenses:Subscription:HeMa                     258.00       CNY
+Expenses:Subscription:Hiccupc                   74.54       CNY
+Expenses:Subscription:ICloud                   259.79       CNY
+Expenses:Subscription:JianXun                   79.90       CNY
+Expenses:Subscription:Q1Travel                  10.00       CNY
+Expenses:Subscription:Q1travel                  30.00       CNY
+Expenses:Subscription:SmsActivate                7.22       CNY
+Expenses:Subscription:USZCN                      6.00       CNY
+Expenses:Subscription:WgetCloud                 12.14       CNY
+Expenses:Tax:Gamble                             10.55       CNY
+Expenses:Tax:PersonalIncome                  35964.43       CNY
+Expenses:Tool                                  502.51       CNY
+Expenses:Transportation:Equipment               57.15       CNY
+Expenses:Transportation:Long                 33812.10       CNY
+Expenses:Transportation:Short                 9261.32       CNY
+Expenses:Trip:Communication                      5.00       CNY
+Expenses:Trip:Food                             802.00       CNY
+Expenses:Trip:Gift                             160.00       CNY
+Expenses:Trip:Other                            107.33       CNY
+Expenses:Trip:Stay                             522.01       CNY
+Expenses:Trip:Ticket                          1236.00       CNY
+Expenses:Trip:Transportation:Short             471.60       CNY
+Expenses:Utilities                            5754.80       CNY
+Income:Bonus:CRIC                            -1015.00       CNY
+Income:Bonus:LY                              -3431.11       CNY
+Income:Currency                               3624.48       CNY
+Income:Currency                               -586.0292     USDT
+Income:Dividends:CD:HTFXQX                     -39.34       CNY
+Income:Dividends:Fund:003095                  -435.87       CNY
+Income:Dividends:Fund:100032                  -210.36       CNY
+Income:Dividends:Fund:162703                  -385.79       CNY
+Income:Dividends:Fund:260108                  -490.42       CNY
+Income:Dividends:Stock:000651                 -500.00       CNY
+Income:Dividends:Stock:000725                 -336.00       CNY
+Income:Dividends:Stock:000938            
+Income:Dividends:Stock:000977                  -36.00       CNY
+Income:Dividends:Stock:002073            
+Income:Dividends:Stock:002288            
+Income:Dividends:Stock:002475                  -43.98       CNY
+Income:Dividends:Stock:002959            
+Income:Dividends:Stock:159820            
+Income:Dividends:Stock:159847            
+Income:Dividends:Stock:510900            
+Income:Dividends:Stock:513030            
+Income:Dividends:Stock:513050            
+Income:Dividends:Stock:600315            
+Income:Dividends:Stock:600355            
+Income:Dividends:Stock:600571            
+Income:Dividends:Stock:600848            
+Income:Dividends:Stock:601328            
+Income:Dividends:Stock:601919                 -603.00       CNY
+Income:Dividends:Stock:601988                -1136.80       CNY
+Income:Event                                  -210.61       CNY
+Income:Event:RedPacket                       -1011.76       CNY
+Income:Family                                 -132.60       CNY
+Income:Family:LJY                        
+Income:Family:Parent                        -19511.00       CNY
+Income:Gamble:Fund:000043:PnL                   52.77       CNY
+Income:Gamble:Fund:000371:PnL            
+Income:Gamble:Fund:001167:PnL                    1.57       CNY
+Income:Gamble:Fund:001549:PnL                   -1.70       CNY
+Income:Gamble:Fund:001975:PnL                  -46.89       CNY
+Income:Gamble:Fund:002086:PnL                    0.25       CNY
+Income:Gamble:Fund:003095:PnL                 3166.04       CNY
+Income:Gamble:Fund:004569:PnL                   -2.10       CNY
+Income:Gamble:Fund:005827:PnL                  387.64       CNY
+Income:Gamble:Fund:007531:PnL                  209.82       CNY
+Income:Gamble:Fund:008763:PnL                    9.33       CNY
+Income:Gamble:Fund:100032:PnL                  180.72       CNY
+Income:Gamble:Fund:110022:PnL                 -921.78       CNY
+Income:Gamble:Fund:16013B:PnL                 -284.55       CNY
+Income:Gamble:Fund:161125:PnL                   18.18       CNY
+Income:Gamble:Fund:162216:PnL                -4315.59       CNY
+Income:Gamble:Fund:162703:PnL                 -409.05       CNY
+Income:Gamble:Fund:163407:PnL               -11665.75       CNY
+Income:Gamble:Fund:180018:PnL                    0.08       CNY
+Income:Gamble:Fund:260108:PnL                  512.79       CNY
+Income:Gamble:Fund:420003:PnL                   19.56       CNY
+Income:Gamble:Fund:501206:PnL                  980.43       CNY
+Income:Gamble:Fund:513030:PnL                   52.41       CNY
+Income:Gamble:Fund:518880:PnL                 -326.97       CNY
+Income:Gamble:Fund:519518:PnL                 -542.78       CNY
+Income:Gamble:OKX:BTC                         -301.64       CNY
+Income:Gamble:OKX:ETH                        -6392.41       CNY
+Income:Gamble:OKX:PnL                       -10002.01       CNY
+Income:Gamble:OKX:PnL                          -93.8141     USDT
+Income:Gamble:OKX:Strategy:PnL                 597.0916     USDT
+Income:Gamble:OKX:T2T:PnL                       70.4009     USDT
+Income:Gamble:Stock:000651:PnL                1372.99       CNY
+Income:Gamble:Stock:000725                    1410.00       CNY
+Income:Gamble:Stock:000725:PnL                1056.00       CNY
+Income:Gamble:Stock:000938:PnL                 486.00       CNY
+Income:Gamble:Stock:000977:PnL                -118.00       CNY
+Income:Gamble:Stock:002073:PnL                 -14.00       CNY
+Income:Gamble:Stock:002288:PnL                 -81.00       CNY
+Income:Gamble:Stock:002475:PnL                1740.00       CNY
+Income:Gamble:Stock:002959:PnL                  90.00       CNY
+Income:Gamble:Stock:159820:PnL                  40.40       CNY
+Income:Gamble:Stock:159847:PnL                2355.00       CNY
+Income:Gamble:Stock:510900:PnL                -263.30       CNY
+Income:Gamble:Stock:513030:PnL                 196.00       CNY
+Income:Gamble:Stock:513050:PnL                  13.90       CNY
+Income:Gamble:Stock:600012:PnL                 891.00       CNY
+Income:Gamble:Stock:600079:PnL                 310.00       CNY
+Income:Gamble:Stock:600315:PnL                 381.00       CNY
+Income:Gamble:Stock:600355:PnL                1240.00       CNY
+Income:Gamble:Stock:600377:PnL                -764.00       CNY
+Income:Gamble:Stock:600571:PnL                -785.00       CNY
+Income:Gamble:Stock:600572:PnL                 270.00       CNY
+Income:Gamble:Stock:600848:PnL                  85.00       CNY
+Income:Gamble:Stock:600938:PnL                 912.00       CNY
+Income:Gamble:Stock:601088:PnL                 279.00       CNY
+Income:Gamble:Stock:601319:PnL               -1155.00       CNY
+Income:Gamble:Stock:601328:PnL              -11934.00       CNY
+Income:Gamble:Stock:601857:PnL               -1152.00       CNY
+Income:Gamble:Stock:601919:PnL                 771.00       CNY
+Income:Gamble:Stock:603050:PnL                -355.00       CNY
+Income:Gamble:Stock:603259:PnL                 414.00       CNY
+Income:Investment:CD:GSCYB:PnL                  -8.28       CNY
+Income:Investment:CD:GSZZY:PnL                 -27.97       CNY
+Income:Investment:CD:HTFXQX:PnL               -217.29       CNY
+Income:Investment:CD:JXYLFY:PnL               -497.92       CNY
+Income:Investment:CD:JXYLFYX:PnL              -410.70       CNY
+Income:Investment:CD:LHB7T:PnL                  -0.02       CNY
+Income:Investment:CD:PAFX366:PnL              -796.54       CNY
+Income:Investment:CD:TPYLYY:PnL                -14.79       CNY
+Income:Investment:CD:ZCB:PnL                   -47.06       CNY
+Income:Investment:DD:PnL                     -2752.35       CNY
+Income:Investment:GC:PnL                     -1516.38       CNY
+Income:Investment:Insurance:QMBZSYLJ:PnL      5945.59       CNY
+Income:Investment:OKX:PnL                       -0.00202528 BTC
+Income:Investment:OKX:PnL                     -911.27       CNY
+Income:Investment:OKX:PnL                     -140.3064     USDT
+Income:Investment:Stock:601328           
+Income:Other                             
+Income:Stable:Job:Salary:CRIC              -715070.22       CNY
+Income:Stable:Job:Salary:LY                -636685.88       CNY
+Income:Stable:Job:SocialSecurity:CRIC      -135445.00       CNY
+Income:Stable:Job:SocialSecurity:LY         -50129.28       CNY
+Liabilities:CreditCard:BOC:6611          
+Liabilities:CreditCard:CITIC:5989               -0.46       CNY
+Liabilities:CreditCard:CMB:4885              -3254.62       CNY
+Liabilities:CreditCard:CMB:4885                 -5          USD
+Liabilities:CreditCard:Depay:2791              -34.40       CNY
+Liabilities:CreditCard:HB                    -1744.17       CNY
+Liabilities:CreditCard:JD                      -74.17       CNY
+Liabilities:Relationship:Payable            -38554.00       CNY

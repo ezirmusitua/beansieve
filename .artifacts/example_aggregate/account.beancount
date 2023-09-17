@@ -69,18 +69,18 @@
 	institution: "Vanguard Group"
 	phone: "+1.800.523.1188"
 
-2021-01-01 open Income:US:Hooli:Match401k USD ""
+2021-01-01 open Income:US:Babble:Match401k USD ""
 
 2021-01-01 open Assets:US:Vanguard:Cash USD ""
 	number: "882882"
 
-2021-01-01 open Income:US:Hooli:Salary USD ""
+2021-01-01 open Income:US:Babble:Salary USD ""
 
-2021-01-01 open Income:US:Hooli:GroupTermLife USD ""
+2021-01-01 open Income:US:Babble:GroupTermLife USD ""
 
-2021-01-01 open Income:US:Hooli:Vacation VACHR ""
+2021-01-01 open Income:US:Babble:Vacation VACHR ""
 
-2021-01-01 open Assets:US:Hooli:Vacation VACHR ""
+2021-01-01 open Assets:US:Babble:Vacation VACHR ""
 
 2021-01-01 open Expenses:Vacation VACHR ""
 

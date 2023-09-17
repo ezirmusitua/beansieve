@@ -31,10 +31,22 @@ include "./price.beancount"
 include "./query.beancount"
 include "./history.beancount"
 
-2023-08-17 * "Hooli" "Payroll"  
+2023-09-10 * "Chichipotle" "Eating out with work buddies"  
+	Liabilities:US:Chase:Slate -31.78 USD
+	Expenses:Food:Restaurant 31.78 USD
+
+2023-09-14 * "Kin Soy" "Eating out with Natasha"  
+	Liabilities:US:Chase:Slate -40.40 USD
+	Expenses:Food:Restaurant 40.40 USD
+
+2023-09-14 * "Corner Deli" "Buying groceries"  
+	Liabilities:US:Chase:Slate -81.17 USD
+	Expenses:Food:Groceries 81.17 USD
+
+2023-09-14 * "Babble" "Payroll"  
 	Assets:US:BofA:Checking 2550.60 USD
-	Income:US:Hooli:Salary -4615.38 USD
-	Income:US:Hooli:GroupTermLife -24.32 USD
+	Income:US:Babble:Salary -4615.38 USD
+	Income:US:Babble:GroupTermLife -24.32 USD
 	Expenses:Health:Life:GroupTermLife 24.32 USD
 	Expenses:Health:Dental:Insurance 2.90 USD
 	Expenses:Health:Medical:Insurance 27.38 USD
@@ -46,27 +58,23 @@ include "./history.beancount"
 	Expenses:Taxes:Y2023:US:SDI 1.12 USD
 	Expenses:Taxes:Y2023:US:SocSec 281.54 USD
 	Assets:US:Federal:PreTax401k 0.00 IRAUSD
-	Assets:US:Hooli:Vacation 5 VACHR
-	Income:US:Hooli:Vacation -5 VACHR
+	Assets:US:Babble:Vacation 5 VACHR
+	Income:US:Babble:Vacation -5 VACHR
 
-2023-08-18 price VBMPX 39.36 USD
+2023-09-15 price VBMPX 162.19 USD
 
-2023-08-18 price RGAGX 120.48 USD
+2023-09-15 price RGAGX 53.04 USD
 
-2023-08-18 price ITOT 148.51 USD
+2023-09-15 price ITOT 137.34 USD
 
-2023-08-18 price VEA 178.78 USD
+2023-09-15 price VEA 143.58 USD
 
-2023-08-18 price VHT 133.05 USD
+2023-09-15 price VHT 40.69 USD
 
-2023-08-18 price GLD 103.06 USD
+2023-09-15 price GLD 315.28 USD
 
-2023-08-19 * "Chichipotle" "Eating out with Natasha"  
-	Liabilities:US:Chase:Slate -46.31 USD
-	Expenses:Food:Restaurant 46.31 USD
-
-2023-08-21 balance Liabilities:US:Chase:Slate -2767.19 USD 
-
-2023-08-21 * "Onion Market" "Buying groceries"  
-	Liabilities:US:Chase:Slate -85.78 USD
-	Expenses:Food:Groceries 85.78 USD
+2023-09-16 * "" "Sell shares of ITOT"  
+	Assets:US:ETrade:ITOT -6 ITOT { 139.28 USD, 2022-12-21 } @ 137.34 USD
+	Assets:US:ETrade:Cash 815.09 USD
+	Expenses:Financial:Commissions 8.95 USD
+	Income:US:ETrade:PnL 11.64 USD

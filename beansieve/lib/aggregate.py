@@ -1,5 +1,5 @@
 import re
-from typing import Dict, List, Pattern, Tuple
+from typing import Pattern, Tuple
 
 from beansieve.lib.beanfile.Reader import BeancountFileReader
 from beansieve.lib.fs import mkdir
@@ -42,4 +42,5 @@ def aggregate(source: str, dest: str, _rules: str):
             structure.append_main(entry)
         else:
             structure.append(entry, key)
+
     structure.write()
