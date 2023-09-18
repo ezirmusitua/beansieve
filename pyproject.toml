@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "beansieve"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="ezirmusitua", email="jferroal@gmail.com" },
 ]

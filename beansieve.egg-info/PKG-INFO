@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: beansieve
-Version: 0.0.1
+Version: 0.1.0
 Summary: A small tools for arrange beancount files
 Author-email: ezirmusitua <jferroal@gmail.com>
 Project-URL: Homepage, https://github.com/ezirmusitua/beansieve
@@ -19,6 +19,12 @@ beansieve 是一个用于整理 beancount 账本的小工具。这个工具主�
 
 1. 通过 `--type aggregate` 将账单中包含特定账户的条目放到一个新账本文件中。
 2. 通过 `--type archive` 将特定时间范围内的 Transaction 条目保留到一个新账本文件中。
+
+## 安装
+
+```bash
+pip install beansieve
+```
 
 ## 一些术语
 
@@ -60,17 +66,17 @@ beansieve 是一个用于整理 beancount 账本的小工具。这个工具主�
 
 ```bash
 # generate sample beancount files
-bean-example > .artifacts/example.beancount
-bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
+bean-example > example.beancount
+bean-report example.beancount balances > example-balances.txt
 
 # aggregate
-rm -rf .artifacts/example_aggregate
+rm -rf example_aggregate
 python -m beansieve \
   --type aggregate \
-  --source ".artifacts/example.beancount" \
-  --dest ".artifacts/example_aggregate" \
+  --source "example.beancount" \
+  --dest "example_aggregate" \
   --rule "Etrade|Income:US:ETrade:.*,Payroll|Income:US:Babble:Salary"
-bean-report .artifacts/example_aggregate/main.beancount balances > .artifacts/example_aggregate-balances.txt
+bean-report example_aggregate/main.beancount balances > example_aggregate-balances.txt
 ```
 
 ## archive 的用法
@@ -85,16 +91,16 @@ bean-report .artifacts/example_aggregate/main.beancount balances > .artifacts/ex
 
 ```bash
 # generate sample beancount files
-bean-example > .artifacts/example.beancount
-bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
+bean-example > example.beancount
+bean-report example.beancount balances > example-balances.txt
 
-rm -rf .artifacts/example_archive
+rm -rf example_archive
 python -m beansieve \
   --type archive \
-  --source ".artifacts/example.beancount" \
-  --dest ".artifacts/example_archive" \
+  --source "example.beancount" \
+  --dest "example_archive" \
   --keep 7d
-bean-report .artifacts/example_archive/main.beancount balances > .artifacts/example_archive-balances.txt
+bean-report example_archive/main.beancount balances > example_archive-balances.txt
 ```
 
 ## 其他说明
