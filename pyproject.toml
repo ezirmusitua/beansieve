@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beansieve"
+version = "0.0.1"
+authors = [
+  { name="ezirmusitua", email="jferroal@gmail.com" },
+]
+dependencies = [
+  "beancount==2.3.5"
+]
+description = "A small tools for arrange beancount files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ezirmusitua/beansieve"
+"Bug Tracker" = "https://github.com/ezirmusitua/beansieve/issues"

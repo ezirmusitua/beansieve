@@ -1,15 +1,24 @@
+Metadata-Version: 2.1
+Name: beansieve
+Version: 0.0.1
+Summary: A small tools for arrange beancount files
+Author-email: ezirmusitua <jferroal@gmail.com>
+Project-URL: Homepage, https://github.com/ezirmusitua/beansieve
+Project-URL: Bug Tracker, https://github.com/ezirmusitua/beansieve/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beancount==2.3.5
+
 # beansieve 账单整理工具
 
 beansieve 是一个用于整理 beancount 账本的小工具。这个工具主要实现以下两个功能：
 
 1. 通过 `--type aggregate` 将账单中包含特定账户的条目放到一个新账本文件中。
 2. 通过 `--type archive` 将特定时间范围内的 Transaction 条目保留到一个新账本文件中。
-
-## 安装
-
-```bash
-pip install beansieve
-```
 
 ## 一些术语
 
@@ -51,17 +60,17 @@ pip install beansieve
 
 ```bash
 # generate sample beancount files
-bean-example > example.beancount
-bean-report example.beancount balances > example-balances.txt
+bean-example > .artifacts/example.beancount
+bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
 
 # aggregate
-rm -rf example_aggregate
+rm -rf .artifacts/example_aggregate
 python -m beansieve \
   --type aggregate \
-  --source "example.beancount" \
-  --dest "example_aggregate" \
+  --source ".artifacts/example.beancount" \
+  --dest ".artifacts/example_aggregate" \
   --rule "Etrade|Income:US:ETrade:.*,Payroll|Income:US:Babble:Salary"
-bean-report example_aggregate/main.beancount balances > example_aggregate-balances.txt
+bean-report .artifacts/example_aggregate/main.beancount balances > .artifacts/example_aggregate-balances.txt
 ```
 
 ## archive 的用法
@@ -76,16 +85,16 @@ bean-report example_aggregate/main.beancount balances > example_aggregate-balanc
 
 ```bash
 # generate sample beancount files
-bean-example > example.beancount
-bean-report example.beancount balances > example-balances.txt
+bean-example > .artifacts/example.beancount
+bean-report .artifacts/example.beancount balances > .artifacts/example-balances.txt
 
-rm -rf example_archive
+rm -rf .artifacts/example_archive
 python -m beansieve \
   --type archive \
-  --source "example.beancount" \
-  --dest "example_archive" \
+  --source ".artifacts/example.beancount" \
+  --dest ".artifacts/example_archive" \
   --keep 7d
-bean-report example_archive/main.beancount balances > example_archive-balances.txt
+bean-report .artifacts/example_archive/main.beancount balances > .artifacts/example_archive-balances.txt
 ```
 
 ## 其他说明
